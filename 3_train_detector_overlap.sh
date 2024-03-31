@@ -1,0 +1,17 @@
+python training_overlap.py \
+       --max_sent 200 \
+       --start_step 0 \
+       --total_step 700 \
+       --bs 32 \
+       --auto_bs $1 \
+       --model_dir $2 \
+       --elmo_label_path $3 \
+       --elmo_auto_path $4 \
+       --pickle_path $5 \
+       --device_no $6 \
+       --lr 1e-3 \
+       --weight_decay 0.0 \
+       --ratio_label $7 \
+       --ratio_auto $8 \
+       --n_split 10 \
+       --seed $9

@@ -1,0 +1,12 @@
+python training.py \
+       --max_sent 200 \
+       --max_epoch 30 \
+       --bs 32 \
+       --model_dir $1 \
+       --elmo_file_path $2 \
+       --pickle_path $3 \
+       --device_no $4 \
+       --lr 1e-3 \
+       --weight_decay 0.0 \
+       --n_split 10 \
+       --seed $5
